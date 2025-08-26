@@ -7,7 +7,7 @@ attach(Delivery_Times)
 #2
 histrogram <- hist(Delivery_Time_.minutes.,main="histrogram fro deliver times",breaks = seq(20,70,length=10),right = TRUE)
 
-#3
+#3-Symmetrical Histogram
 
 
 #4
@@ -58,5 +58,6 @@ for(i in 1:length(breaks)){
 
 par(mar = c(4, 4, 2, 1))
 plot(breaks,new,type = "l",main="cumulative frequency polygon for deliver times",xlab = "deliver times",ylab = "cumulative frequancy",ylim = c(0,max(freq)))
+
 
 cbind(Upper = breaks, Cumfreq = new)
